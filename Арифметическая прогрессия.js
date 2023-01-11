@@ -14,7 +14,7 @@ function generateRange(min, max, step) {
   return arRange;
 }
 
-//Проверка ////////////////////////////////////////////////////////////
+//Проверка //////////////////////////////////////////////////////////
 
 console.log(generateRange02(2, 10, 2)) // should return array of [2,4,6,8,10]
 console.log(generateRange02(1, 10, 3)) // should return array of [1,4,7,10]
@@ -35,7 +35,7 @@ function generateRange02(min, max, step) {
 }
 
 
-//Вариат решения 3 ////////////////////////////////////////////////////
+//Вариат решения 3 //////////////////////////////////////////////////
 
 function generateRange03(min, max, step) {
 
@@ -49,3 +49,8 @@ function generateRange03(min, max, step) {
 
   return arifmetikProgression;
 }
+
+
+
+
+
