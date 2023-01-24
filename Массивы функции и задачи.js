@@ -16,10 +16,7 @@ function ArrayMinMaxEs6(arr) {
 // Функция должна возвращать новый массив.
 
 function replace(arr, n, newValue) {
-  if (n > arr.length - 1) {
-    return arr;
-  }
-  return [...arr.slice(0, n), newValue, ...arr.slice(n + 1, arr.length)];
+  return [...arr.slice(0, n), newValue, ...arr.slice(n + 1)];
 }
 
 ////////////////////////////////////////////////////////////////////////
