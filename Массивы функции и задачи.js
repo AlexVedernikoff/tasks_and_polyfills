@@ -19,4 +19,19 @@ function replace(arr, n, newValue) {
   return [...arr.slice(0, n), newValue, ...arr.slice(n + 1)];
 }
 
-////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+// написать функцию, которая возвращает одномерный массив из многомерного:
+
+function flattenArray(arr) {
+  const result = arr.reduce((acc, el) => {
+    if (!Array.isArray(el)) {
+      return acc.concat(el);
+    } else {
+      return acc.concat(flattenArray(el));
+    }
+  }, [])
+  return result;
+}
+
+//////////////////////////////////////////////////////////////////////////
+
